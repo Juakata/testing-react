@@ -4,10 +4,10 @@ import Logo from '../../assets/logo.png';
 import './styles.scss';
 
 const Header = () => (
-    <header>
+    <header data-test="header">
       <div className="wrap">
         <div className="logo">
-          <img src={Logo} alt="logo" />
+          <img data-test="logo-header" src={Logo} alt="logo" />
         </div>
       </div>
     </header>
