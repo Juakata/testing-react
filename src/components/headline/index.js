@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Headline extends Component {
-  render() {
-    const { header, desc } = this.props;
-    return (
-      <div>
-        <h1>{header}</h1>
-        <p>{desc}</p>
-      </div>
-    );
+const Headline = ({ header, desc }) => {
+  if (!header) {
+    return null;
   }
+  return (
+    <div data-test="headline">
+      <h1 data-test="header">{header}</h1>
+      <p data-test="desc">{desc}</p>
+    </div>
+  );
 }
 
 export default Headline;
