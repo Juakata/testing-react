@@ -22,5 +22,5 @@ describe('Header Component', () => {
   it('Should render logo without errors', () => {
     const wrapper = findByAttr(component, 'logo-header');
     expect(wrapper.length).toBe(1);
-  })
+  });
 });
